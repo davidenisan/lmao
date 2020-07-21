@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Open+Sans:400italic,300italic);
+@font-face {
+  font-family: 'montserratBold';
+  src:    
+     url('fonts/montserrat/Montserrat-Bold.ttf') format('TrueType');
+}
+@font-face {
+  font-family: 'montserrat';
+  src:    
+     url('fonts/montserrat/Montserrat-Regular.ttf') format('TrueType');
+}
+@font-face {
+  font-family: 'camptonLight';
+  src:    
+     url('fonts/campton/Campton-LightDEMO.otf') format('OpenType');
+}
+@font-face {
+  font-family: 'camptonBold';
+  src:    
+     url('fonts/campton/Campton-BoldDEMO.otf') format('OpenType');
+}
+@font-face {
+  font-family: 'Com4t';
+  src:    
+     url('fonts/com4t/COM4F_RG.TTF') format('TrueType');
+}
+
+/* ====================================
+Body CSS
+==================================== */
+/*Add custom cursor so it auto inherits font styles*/
+
+body {
+  overflow-x: hidden;
+}
+.bg-overlay img{
+  width: 100%;
+}
+.element::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.element-cursor{
+   opacity: 0;
+	display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.welcome-text{
+  background-color: rgba(34, 34, 34, 0) !important;
+  margin-left: 20%;
+  font-size: 4em;
+  font-family: 'montserrat' !important;
+}
+.welcome-text span{
+  color: #fe5a01;
+}
+.heading {
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'montserratBold';
+}
+.heading h2 {
+  font-family: 'montserratBold';
+}
+.heading .custom-underline::after {
+  height: 5px !important;
+  margin-top: 35px;
+  margin-left: -90px;
+  width: 80px;
+  background-color: #fe5a01;
+    transition: 0.4s ease-out all .1s;
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+}
+.row2{
+  margin: 50px 100px 70px 100px;
+  width: 100%;
+}
+.row2 img{
+  width: 75%;
+}
+.row2 img:hover{
+  margin-top: -10px;
+  transition: all 0.2s linear;
+}
+.row2 h2{
+  font-size: 1.5em;
+  font-family: camptonBold;
+}
+.row2 :nth-child(2){
+  margin-top: 35px;
+}
+.row2 p{
+  font-size: 1.1em;
+  font-family: camptonLight;
+}
+
+
+
+@media (max-width: 640px) {
+  .welcome-text{
+    font-size: 2em;
+    margin-left: 0 !important;
+  }
+  .row2{
+    margin: 50px 10px 70px 10px;
+  }
+  .heading .custom-underline::after {
+    margin-left: -80px;
+    width: 70px;
+      transition: 0.4s ease-out all .1s;
+  }
+  
+}
