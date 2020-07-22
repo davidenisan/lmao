@@ -33,8 +33,14 @@ Body CSS
 body {
   overflow-x: hidden;
 }
-.bg-overlay img{
+.bg-overlay{
+  height: 100vh !important;
   width: 100%;
+  background: url("../img/bg2.png")  no-repeat center center fixed !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .element::after {
 	content: '|';
@@ -90,7 +96,12 @@ body {
   background-color: #fe5a01;
     transition: 0.4s ease-out all .1s;
 }
-
+.nextRow{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .custom-underline::after {
   content: "";
   position: absolute;
@@ -133,5 +144,7 @@ body {
     width: 70px;
       transition: 0.4s ease-out all .1s;
   }
-  
+  .nextRow{
+    margin-top: 400px;
+  }
 }
