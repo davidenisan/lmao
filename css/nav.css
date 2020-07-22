@@ -31,7 +31,8 @@ body {
   margin-left: 43%;
 }
 .home a img{
-  height: 30px;
+  height: 35px !important;
+  margin-top: 50px;
 }
 
 /* ====================================
@@ -201,7 +202,7 @@ Burger king
 }
 
 
-
+g
 
 .home a {
   font-family: "Work Sans", sans-serif;
@@ -253,6 +254,9 @@ Burger king
   }
   nav li a:before {
     width: 25px;
+  }
+  .home a img{
+    margin-left: 20px !important;
   }
   
 }
